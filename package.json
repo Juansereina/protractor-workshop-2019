@@ -1,0 +1,27 @@
+{
+  "name": "workshop-protractor",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Protractor",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && protractor dist/protractor/local.config.js"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "protractor"
+  ],
+  "author": "Juan Sebastián Reina <juansereina@outlook.com> (Juansereina)",
+  "license": "MIT",
+  "dependencies": {
+    "protractor": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.6",
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
+  }
+}
