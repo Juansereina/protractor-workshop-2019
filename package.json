@@ -17,6 +17,7 @@
   "author": "Juan Sebastián Reina <juansereina@outlook.com> (Juansereina)",
   "license": "MIT",
   "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.2"
   },
   "devDependencies": {
