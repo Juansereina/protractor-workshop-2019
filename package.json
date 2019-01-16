@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
-    "test": "npm run build && protractor dist/protractor/local.config.js"
+    "build": "npm run lint && npm run clean && tsc",
+    "test": "npm run build && protractor dist/protractor/local.config.js",
+    "lint": "tslint --project tsconfig.json protractor/**/*.ts test/**/*.ts src/**/*.ts"
   },
   "keywords": [
     "ui-testing",
@@ -18,7 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "jasmine-spec-reporter": "^4.2.1",
-    "protractor": "^5.4.2"
+    "protractor": "^5.4.2",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1"
   },
   "devDependencies": {
     "@types/jasminewd2": "^2.0.6",
