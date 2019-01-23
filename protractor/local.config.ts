@@ -3,7 +3,8 @@ import { reporter } from './helpers/reporter';
 
 export const config: Config = {
   framework: 'jasmine',
-  specs: [ '../test/google.spec.js' ],
+  specs: ['../test/**/*.spec.js'],
+  getPageTimeoutgetPageTimeout: 5000,
   SELENIUM_PROMISE_MANAGER: false,
   onPrepare: () => {
     browser.ignoreSynchronization = true;
