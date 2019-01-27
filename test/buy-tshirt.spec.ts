@@ -41,7 +41,7 @@ describe('Buy a t-shirt', () => {
     await(browser.sleep(3000));
     await summaryStepPage.checkout();
     await(browser.sleep(3000));
-    await signInStepPage.signIn();
+    await signInStepPage.signIn('aperdomobo@gmail.com', 'WorkshopProtractor');
     await(browser.sleep(3000));
     await addressStepPage.proceed();
     await(browser.sleep(3000));

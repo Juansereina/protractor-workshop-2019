@@ -11,9 +11,9 @@ export class SignInStepPage {
     this.submit = $('#SubmitLogin > span');
   }
 
-  public async signIn(): Promise<void> {
-    await this.email.sendKeys('aperdomobo@gmail.com');
-    await this.password.sendKeys('WorkshopProtractor');
+  public async signIn(email: string, passwd: string): Promise<void> {
+    await this.email.sendKeys(email);
+    await this.password.sendKeys(passwd);
     await this.submit.click();
   }
 }
